@@ -4,12 +4,15 @@ public class ArahGerakPeluru : MonoBehaviour
 {
     public float speed = 5f;
     public float PeluruLifeTime = 2f;
+    public Score score;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //menghapus peluru setelah 2 detik
         Destroy(gameObject, PeluruLifeTime);
+        GameObject _gameObject = GameObject.FindGameObjectWithTag("Score");
+        score = _gameObject.GetComponent<Score>();
     }
 
     // Update is called once per frame
@@ -22,7 +25,11 @@ public class ArahGerakPeluru : MonoBehaviour
     {
         if (collision.collider.CompareTag("Enemy"))
         {
+            // Debug.Log("Nabrak Enemy");
+            score.AddScore();
+            score.UpdateScore();
             Destroy(gameObject);
         }
     }
+
 }

@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         // Geser Object Ke Mouse
-        Debug.Log(Input.mousePosition);
+        // Debug.Log(Input.mousePosition);
         Vector2 worldMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         // Debug.Log(worldMousePosition);
         // CubeTransform.position = worldMousePosition;
