@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Peluru
+  - Enemy
   layers:
   - Default
   - TransparentFX

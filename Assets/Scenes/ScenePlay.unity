@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0714f4dd4e76ff8499c202757ae0e096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnEnemy: {fileID: 0}
+  spawnEnemy: {fileID: 2909444194478886562, guid: 047a470bd53ce684695136326e401656, type: 3}
   sedangSpawn: 1
   intervalSpawn: 3
 --- !u!4 &1977969469
