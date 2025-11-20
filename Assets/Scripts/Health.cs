@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public int PlayerHealth;
-    public int PlayerHealthMax;
+    public float PlayerHealth;
+    public float PlayerHealthMax;
     public Image HealthBar;
 
 
@@ -24,6 +24,6 @@ public class Health : MonoBehaviour
     public void KurangiNyawa()
     {
         PlayerHealth--;
-        HealthBar.fillAmount = PlayerHealth / PlayerHealthMax;
+        HealthBar.fillAmount = PlayerHealth / 10f;
     }
 }

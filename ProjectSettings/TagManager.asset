@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Score
   - Health
+  - Lantai
   layers:
   - Default
   - TransparentFX

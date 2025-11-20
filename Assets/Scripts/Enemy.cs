@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-   
+    public Health health;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Destroy(gameObject, 3f);
+        GameObject _gameObject = GameObject.FindGameObjectWithTag("Health");
+        health = _gameObject.GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -22,8 +25,9 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.collider.CompareTag("Player"))
+        if (collision.collider.CompareTag("Lantai"))
         {
+            health.KurangiNyawa();
             Destroy(gameObject);
         }
     }
