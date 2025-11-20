@@ -1,3 +1,4 @@
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,6 +8,11 @@ public class Player : MonoBehaviour
     public Vector2 PosisiKlik;
 
     public GameObject spawnPeluru;
+
+    public int PlayerHealth;
+    public int PlayerHealthMax;
+
+    public Image HealthBar;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +47,17 @@ public class Player : MonoBehaviour
         {
             // Spawn Objek
             Instantiate(spawnPeluru, new Vector3(worldMousePosition.x, -4.5f ,0), Quaternion.identity);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            Debug.Log("Kena Enemy");
+            PlayerHealth--;
+            HealthBar.fillAmount = PlayerHealthMax / PlayerHealth;
+            // HealthBar.fillAmount = 0.5f;
         }
     }
 

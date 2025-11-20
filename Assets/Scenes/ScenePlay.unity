@@ -1045,6 +1045,9 @@ MonoBehaviour:
   CubeTransform: {fileID: 1609405819}
   PosisiKlik: {x: 0, y: 0}
   spawnPeluru: {fileID: 4189064659964475487, guid: a917d9c69498e4b4f808698b2abaf133, type: 3}
+  PlayerHealth: 10
+  PlayerHealthMax: 0
+  HealthBar: {fileID: 203468099}
 --- !u!212 &1609405818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1161,6 +1164,50 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1945384773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945384775}
+  - component: {fileID: 1945384774}
+  m_Layer: 0
+  m_Name: Health
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1945384774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945384773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5997acaef999c3a4e82e72ccf0050563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1945384775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945384773}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 647.1654, y: 982.879, z: -8.375914}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1977969467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,3 +1267,4 @@ SceneRoots:
   - {fileID: 297522207}
   - {fileID: 755792296}
   - {fileID: 409083209}
+  - {fileID: 1945384775}

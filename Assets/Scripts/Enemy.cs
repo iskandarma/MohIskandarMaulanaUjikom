@@ -22,5 +22,9 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.collider.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
