@@ -167,10 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1241,9 +1241,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0714f4dd4e76ff8499c202757ae0e096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnEnemy: {fileID: 2909444194478886562, guid: 047a470bd53ce684695136326e401656, type: 3}
+  spawnEnemyType1: {fileID: 2909444194478886562, guid: 047a470bd53ce684695136326e401656, type: 3}
+  spawnEnemyType2: {fileID: 5393051327791096101, guid: 6a9adc899f7cf3f4bbc8f06392b347ce, type: 3}
+  spawnEnemyType3: {fileID: 2899716270976411406, guid: 8bba6bc04dd1caa43931bce1ed1832ef, type: 3}
   sedangSpawn: 1
-  intervalSpawn: 3
+  intervalSpawn: 2
+  typeEnemy: 0
 --- !u!4 &1977969469
 Transform:
   m_ObjectHideFlags: 0
