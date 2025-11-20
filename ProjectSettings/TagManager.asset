@@ -7,6 +7,7 @@ TagManager:
   - Peluru
   - Enemy
   - Score
+  - Health
   layers:
   - Default
   - TransparentFX

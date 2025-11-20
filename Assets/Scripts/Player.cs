@@ -14,10 +14,13 @@ public class Player : MonoBehaviour
 
     public Image HealthBar;
 
+    public Health health;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GameObject _gameObject = GameObject.FindGameObjectWithTag("Health");
+        health = _gameObject.GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -55,8 +58,9 @@ public class Player : MonoBehaviour
         if (collision.collider.CompareTag("Enemy"))
         {
             Debug.Log("Kena Enemy");
-            PlayerHealth--;
-            HealthBar.fillAmount = PlayerHealthMax / PlayerHealth;
+            // PlayerHealth--;
+            health.KurangiNyawa();
+            // HealthBar.fillAmount = PlayerHealthMax / PlayerHealth;
             // HealthBar.fillAmount = 0.5f;
         }
     }
