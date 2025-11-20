@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 
     public Vector2 PosisiKlik;
 
+    public GameObject spawnPeluru;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,7 +37,11 @@ public class Player : MonoBehaviour
         // mengubah posisi objek
         CubeTransform.position = worldMousePosition;   
 
-        // if()
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            // Spawn Objek
+            Instantiate(spawnPeluru, new Vector3(worldMousePosition.x, -4.5f ,0), Quaternion.identity);
+        }
     }
 
 
